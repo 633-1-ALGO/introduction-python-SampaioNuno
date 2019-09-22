@@ -5,9 +5,10 @@ tab_lettres = [
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
      'x', 'y', 'z', ' '], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-# def frequence(texte,tab_lettres):
+def frequence(texte, tab):
+    for lettre in texte:
+        index = tab[0].index(lettre)
+        tab[1][index] += 1
+    return tab
 
-for lettre in texte:
-    index = tab_lettres[0].index(lettre)
-    tab_lettres[0][index] = texte.count(lettre)
-print(tab_lettres)
+print(frequence(texte, tab_lettres))
