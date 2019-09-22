@@ -2,11 +2,10 @@
 # Contraintes : Ne pas utiliser de valeurs numériques.
 # Données : les variables a et b
 
-a = c = 11
+a = 11
 b = 42
 
-a = b
-b = c
+a, b = b, a
 
 print(a)
 print(b)

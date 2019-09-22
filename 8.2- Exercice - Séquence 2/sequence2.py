@@ -4,9 +4,7 @@
 
 nb_articles = 13
 prix_ht = 42.75
-result = (nb_articles * prix_ht)
-result += 7.7/100
 
+TVA = 1.077
 
-
-print("Le prix TTC est de ", result,"chf.")
+print("Le prix TTC est de {0} chf.".format(nb_articles*prix_ht*TVA))

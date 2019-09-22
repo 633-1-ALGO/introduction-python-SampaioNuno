@@ -2,3 +2,6 @@
 # Bonus : Inverser le sens de lecture.
 texte = "Ceci est un exemple exemplaire d'exemple exempté d'exemple."
 
+print(texte.count('exemple'))
+print(texte.replace('est', 'représente'))
+print(texte[::-1])
